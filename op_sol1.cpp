@@ -12,13 +12,14 @@ void solve() {
 	if(x>y)
 		swap(x, y);
 	//sort the first three numbers {a[0],a[1],a[2]}
+	//again, to make the conditions easier in the next lines 
 	sort(a, a+3);
-	//first condition: check if the least number in the array is less or equal to 'y'
-	//second condition: check it the second least number is less than or equal to 'y'
+	//first condition: check if the least number in the array is less than or equal to 'x'
+	//second condition: check if the second least number is less than or equal to 'y'
 	//third condition: check if the sum of all the numbers in the array is equal to 'x+y'
 	/* more explanation:
 	 * the reason why it is important to check the first two numbers in
-	 * the array is less than their corresponding partners which is 'x' and 'y'
+	 * the array if they're less than their corresponding partners which is 'x' and 'y'
 	 * is because if one of them is greater than their corresponding partner,
 	 * then it will not be valid anymore since the third number which is the
 	 * stones that will be added to these first two stones will only make it bigger,
